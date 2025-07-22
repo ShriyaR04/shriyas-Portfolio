@@ -1,0 +1,57 @@
+<section id="projects">
+  <div class="projects-section">
+    <h2 class="projects-heading">My Projects.</h2>
+
+    <mat-grid-list cols="3" rowHeight="1:1" gutterSize="16px">
+      <mat-grid-tile *ngFor="let project of projects">
+        <mat-card class="project-card mat-elevation-z4">
+          <mat-card-header>
+            <mat-card-title class="title">{{ project.title }}</mat-card-title>
+            <mat-card-subtitle class="tags">{{
+              project.tags
+            }}</mat-card-subtitle>
+          </mat-card-header>
+
+          <img
+            mat-card-image
+            [src]="project.imageUrl"
+            alt="{{ project.title }}"
+          />
+
+          <mat-card-content>
+            <p>{{ project.description }}</p>
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+</section>
+<!-- <p style="color: red">PROJECTS COMPONENT LOADED</p>
+<p style="color: blue">Projects Array Length: {{ projects?.length }}</p>
+
+<section style="padding: 40px; background-color: #49a3a3">
+  <h2 style="text-align: center; margin-bottom: 20px">My Projects.</h2>
+
+  <div
+    style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center"
+  >
+    <div
+      *ngFor="let project of projects"
+      style="
+        border: 1px solid #ccc;
+        width: 300px;
+        padding: 10px;
+        background: white;
+      "
+    >
+      <img
+        [src]="project.imageUrl"
+        alt="{{ project.title }}"
+        style="width: 100%; height: auto"
+      />
+      <h3>{{ project.title }}</h3>
+      <p>{{ project.description }}</p>
+      <a [href]="project.link" target="_blank">View Project</a>
+    </div>
+  </div>
+</section> -->

@@ -1,0 +1,188 @@
+/* .about-container {
+  background-color: #0d1117;
+  color: #c9d1d9;
+  padding: 40px 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.about-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #45a29e;
+  object-fit: cover;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.summary {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.summary span {
+  color: #45a29e;
+  font-weight: 600;
+}
+
+.section {
+  margin-top: 40px;
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #66fcf1;
+}
+
+.experience-card {
+  background-color: #161b22;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border-left: 4px solid #45a29e;
+}
+
+.experience-card h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.meta {
+  font-size: 0.9rem;
+  color: #8b949e;
+  margin-bottom: 10px;
+}
+
+ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.tags {
+  margin-top: 10px;
+}
+
+.tag {
+  background-color: #21262d;
+  color: #45a29e;
+  padding: 4px 10px;
+  margin: 3px;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 0.85rem;
+} */
+:host {
+  display: block;
+  width: 100%;
+  background-color: #0d1117;
+  color: #c9d1d9;
+}
+
+.about-container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 60px 40px;
+  box-sizing: border-box;
+}
+
+.about-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid #45a29e;
+  object-fit: cover;
+}
+.profile-pic:hover {
+  transform: scale(1.05);
+}
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.summary {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  max-width: 900px;
+}
+
+.summary span {
+  color: #45a29e;
+  font-weight: 600;
+}
+
+.section {
+  margin-top: 40px;
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #66fcf1;
+}
+
+.experience-card {
+  background-color: #161b22;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border-left: 4px solid #45a29e;
+}
+
+.experience-card h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.meta {
+  font-size: 0.9rem;
+  color: #8b949e;
+  margin-bottom: 10px;
+}
+
+ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.tags {
+  margin-top: 10px;
+}
+
+.tag {
+  background-color: #21262d;
+  color: #45a29e;
+  padding: 4px 10px;
+  margin: 3px;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 0.85rem;
+}

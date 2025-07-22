@@ -1,0 +1,192 @@
+<!-- <section id="about"></section>
+
+<div class="row align-items-center default-container">
+  <div class="col-lg-6">
+    <div class="content">
+      <div class="about-container">
+        <div class="content-left">
+          <h2 class="default-topic">About me.</h2>
+          <p class="default-p">
+            I am a <span class="default-highlight">collaborative</span> and
+            <span class="default-highlight">driven individual</span> who is
+            always eager to <span class="default-highlight">upskill </span>and
+            stay current with market trends. As a
+            <span class="default-highlight">good communicator</span> and
+            <span class="default-highlight">team player</span>, I thrive in
+            group settings and enjoy taking on
+            <span class="default-highlight">leadership roles</span>. My
+            commitment to
+            <span class="default-highlight">continuous learning</span> and my
+            ability to effectively lead and work within a team make me a
+            valuable asset in any project or organization.
+          </p>
+        </div>
+
+        <div class="content-right">
+          <div class="profile-pic-container">
+            <p>
+              <img
+                src="assets/images/shriya.jpeg"
+                alt="About me picture"
+                class="about-picture"
+              />
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="about-container">
+        <div class="about-education">
+          <div class="education-details">
+            <div class="education-item">
+              <div style="display: flex; align-items: center">
+                <h3 style="margin-right: 10px">Under Grad</h3>
+                <span class="date">2021-2025</span>
+              </div>
+              <p>SRM University</p>
+              <p>CGPA : 8.99</p>
+            </div>
+
+            <div class="education-item">
+              <div style="display: flex; align-items: center">
+                <h3 style="margin-right: 10px">Senior secondary</h3>
+                <span class="date">2020-2021</span>
+              </div>
+              <p>La chatelaine Junior College</p>
+              <p>84.1%</p>
+            </div>
+            <div class="education-item">
+              <div style="display: flex; align-items: center">
+                <h3 style="margin-right: 10px">Higher secondary</h3>
+                <span class="date">2018-2019</span>
+              </div>
+              <p>La chatelaine Junior College</p>
+              <p>84.6%</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-section work-experience">
+          <h4>Work Experience</h4>
+          <div class="work-details">
+            <div class="work-item">
+              <div style="display: flex; align-items: center">
+                <h3 style="margin-right: 10px">Frontend Developer Intern</h3>
+                <span class="date"> Dec 2023 - Jan 2024</span>
+              </div>
+              <p>VMG digital</p>
+            </div>
+          </div>
+        </div>
+        <div class="skills-section">
+          <h3>Skills</h3>
+          <ul>
+            <li>
+              <i class="fab fa-angular fa-lg" style="color: #dd0031"></i>
+              Angular
+            </li>
+            <li>
+              <i class="fab fa-js fa-lg" style="color: #f7df1e"></i> JavaScript
+            </li>
+            <li>
+              <i class="fab fa-html5 fa-lg" style="color: #e34f26"></i> HTML
+            </li>
+            <li>
+              <i class="fab fa-css3-alt fa-lg" style="color: #1572b6"></i> CSS
+            </li>
+            <li>
+              <i class="fas fa-code fa-lg" style="color: #00599c"></i> C++
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+<!-- updated about -->
+<!-- <div class="about-container">
+  <div class="profile-section">
+    <img src="assets\images\shri.jpeg" alt="My Profile" class="profile-image" />
+    <h1 class="title-header">About Me.</h1>
+    <p>
+      <span class="highlight">Collaborative</span> and
+      <span class="highlight">driven individual</span> who is eager to
+      <span class="highlight">upskill</span> and stay updated. A
+      <span class="highlight">good communicator</span> and
+      <span class="highlight">team player</span>
+      <span class="highlight">focuses on</span>
+      <span class="highlight">continuous learning</span>.
+    </p>
+  </div>
+
+  <div class="education">
+    <h2>Education</h2>
+    <div *ngFor="let edu of education" class="education-entry">
+      <h3>{{ edu.level }}</h3>
+      <p>{{ edu.institution }} | {{ edu.duration }}</p>
+      <p *ngIf="edu.cgpa">CGPA: {{ edu.cgpa }}</p>
+    </div> -->
+<!-- </div>
+
+  <div class="skills">
+    <h2>languages/frameworks</h2>
+    <ul>
+      <li *ngFor="let skill of coursework">{{ skill }}</li>
+    </ul>
+  </div>
+
+  <div class="experience">
+    <h2>Experience</h2>
+    <div *ngFor="let exp of experiences" class="experience-entry">
+      <h3>{{ exp.company }} - {{ exp.role }}</h3>
+      <p>{{ exp.duration }} | {{ exp.location }}</p>
+      <p class="tech-stack">Tech: {{ exp.tech.join(", ") }}</p>
+      <ul>
+        <li *ngFor="let task of exp.responsibilities">{{ task }}</li>
+      </ul>
+    </div>
+  </div>
+</div> -->
+<section id="about">
+  <div class="about-container">
+    <div class="about-header">
+      <img
+        src="assets\images\shri.jpeg"
+        alt="Profile Photo"
+        class="profile-pic"
+      />
+      <h1 class="title">About Me.</h1>
+    </div>
+
+    <p class="summary">
+      I am a <span>collaborative</span> and <span>driven individual</span> who
+      is always eager to <span>upskill</span> and stay current with market
+      trends. A <span>good communicator</span> and <span>team player</span>, I
+      enjoy taking on <span>leadership roles</span>. My commitment to
+      <span>continuous learning</span> and ability to work efficiently in a team
+      make me a valuable asset.
+    </p>
+
+    <div class="section">
+      <h2>Education</h2>
+      <p>
+        <strong>{{ graduation.university }}</strong> ({{ graduation.year }})
+      </p>
+      <p>CGPA: {{ graduation.cgpa }}</p>
+    </div>
+
+    <div class="section">
+      <h2>Experience</h2>
+      <div *ngFor="let exp of experiences" class="experience-card">
+        <h3>
+          {{ exp.title }} – <span class="company">{{ exp.company }}</span>
+        </h3>
+        <p class="meta">{{ exp.location }} | {{ exp.duration }}</p>
+        <ul>
+          <li *ngFor="let point of exp.details">{{ point }}</li>
+        </ul>
+        <div class="tags">
+          <span *ngFor="let tech of exp.tech" class="tag">{{ tech }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

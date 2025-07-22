@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap");
+
+#contact {
+  background-color: #0d1117;
+  padding: 60px 20px;
+  font-family: "Oswald", sans-serif;
+  color: #f0f0f0;
+  text-align: center;
+}
+
+.contact-title h1 {
+  margin-bottom: 30px;
+
+  font-size: 3rem;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* .contact-container:hover {
+  transform: scale(1.05);
+} */
+
+.contact-box {
+  background-color: #161b22;
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.contact-text {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  color: #c9d1d9;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-contact {
+  padding: 12px 24px;
+  background-color: #58a6ff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-contact:hover {
+  background-color: #1f6feb;
+  transform: scale(1.05);
+}

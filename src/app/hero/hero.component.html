@@ -1,0 +1,50 @@
+<body>
+  <section id="hero">...</section>
+
+  <div class="row align-items-center default-container">
+    <div class="col-lg-8">
+      <div class="text-left">
+        <h3>
+          <span class="home-title">Hello I am,</span>
+        </h3>
+
+        <h2 class="hero-author">
+          Shriya Rajessh, <span id="dynamic-text">{{ dynamicText }}</span>
+        </h2>
+
+        <h3>
+          "The future belongs to those who believe in the beauty of their
+          dreams."
+        </h3>
+
+        <a href="assets\shriyaresume.pdf" target="_blank" class="cv-link"
+          ><fa-icon class="myDownload" [icon]="myDownload"></fa-icon> download
+          my CV</a
+        >
+      </div>
+    </div>
+  </div>
+</body>
+
+<script>
+  const text = document.querySelector(".sec-text");
+  {
+    const textLoad = () => {
+      setTimeout(() => {
+        text.textContent = "front-end developer.";
+      }, 0);
+
+      setTimeout(() => {
+        text.textContent = "asipiring software engineer.";
+      }, 0);
+
+      setTimeout(() => {
+        text.textContent = ".";
+      }, 0);
+    };
+
+    textLoad();
+    setInterval(textLoad, 12000);
+  }
+</script>
+<!-- n -->
